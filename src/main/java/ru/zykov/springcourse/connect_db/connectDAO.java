@@ -1,10 +1,10 @@
-package ru.zykov.springcourse.dao;
+package ru.zykov.springcourse.connect_db;
 
-import ru.zykov.springcourse.models.User;
+import ru.zykov.springcourse.models.User; /* a pochem import esli package, a htoya drugoy da?*/
 
 import java.util.List;
 
-public interface UserDAO {
+public interface connectDAO {
     void createUsersTable();
 
     void dropUsersTable();
@@ -17,5 +17,4 @@ public interface UserDAO {
     List<User> getAllUsers();
 
     void cleanUsersTable();
-
 }
